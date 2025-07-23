@@ -44,6 +44,7 @@ button{
 
 .container p , .flower-content ul li{
      font-size: 1.375rem;
+      color: var(--text-color);
 }
 .container h2{
     font-size: 50px;
@@ -90,11 +91,11 @@ nav .content ul{
     width: 100%;
 }
 /* plant design */
-.plants .content{
+.title .content{
     text-align: center;
-}
-.plants .content p ,.flower-content ul li{
-    color: var(--text-color);
+    width: 100%;
+    max-width: 888px;
+    margin: auto;
 }
 .img-card{
     display: grid;
@@ -121,7 +122,9 @@ nav .content ul{
     max-width:540px;
     z-index: 0;
 }
-
+.deals .content {
+    margin: 120px auto;
+}
 @media screen and (max-width:576px){
     nav .content ul{
         display: none;
@@ -148,6 +151,6 @@ nav .content ul{
     .flower-store{
         flex-direction: column;
     }
-    
+
 
 }
