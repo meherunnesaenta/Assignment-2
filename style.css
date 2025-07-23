@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-bold {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* shared style */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary-color:#E95A08;
+    --text-color:rgba(0, 0, 0, 0.5);
+}
+.container{
+    width:79.16%;
+    margin: auto;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+/* header design */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .content{
+    display: flex;
+    gap:50px;
+}
+header .content >ul {
+    display:flex;
+    gap:50px;
+
+    
+}
+header .content li{
+    list-style: none;
+   
+}
+header .content a{
+    color:var(--text-color);
+}
+
+/* banner design */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 120px auto;
+    padding-top: 120px;
+}
+.banner h1{
+    font-size: 4rem;
+}
+.banner p{
+    color:var(--text-color);
+    font-size: 1.50rem;
+}
+
+/* plants section  */
+@media screen and (max-width:576px) {
+     header .content ul{
+        display: none;
+     }
+     .banner{
+        flex-direction: column-reverse;
+        padding: 0;
+     }
+    .banner img{
+        padding: 28px;
+    }
+    
+}
