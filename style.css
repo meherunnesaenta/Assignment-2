@@ -109,6 +109,11 @@ nav a{
     width: 100%;
     height: auto;
 }
+.img-container p{
+    color:black;
+    font-weight: bold;
+
+}
 
 /* flower store */
 .flower-store{
@@ -116,13 +121,14 @@ nav a{
     margin-top: 210px;
     justify-content: space-between;
     align-items: center;
+    gap:20px;
 }
 .flower-store #badge{
     width: 100%;
     max-width: 286px;
     position: absolute;
-    margin-top: -127px;
-    margin-left: 400px;
+    margin-top: -130px;
+    margin-left: 360px;
     z-index: 1;
     
 }
@@ -131,15 +137,18 @@ nav a{
     max-width: 540px;
     position: relative;
 }
+.flower-content h2{
+    padding: 0;
+    margin: 0;
+}
 
 .flower-store .flower-content{
-    width:100%;
-    height: auto;
     max-width:540px;
     max-height: 521px;
+    
 }
 .flower-store .flower-content ul li{
-    margin:20px 20px 20px 0px;
+    margin:10px 10px 10px 0px;
 }
 .deals .content {
     margin: 120px auto;
@@ -250,6 +259,7 @@ footer li a{
 footer .box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -303,8 +313,18 @@ footer .box{
     grid-column: auto;
     grid-row: auto;
    }
-   .box{
+   footer .box{
     flex-direction: column;
    }
+   footer ul{
+    margin: 0;
+   }
+    footer ul li{
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  footer a{
+  }
+ 
 
 }
