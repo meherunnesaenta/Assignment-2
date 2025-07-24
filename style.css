@@ -283,7 +283,7 @@ footer .box{
     .banner{
         flex-direction: column-reverse;
     }
-    .banner div h1{
+    .banner div h1, .container h2{
         font-size: 2rem;
     }
     .img-card{
@@ -322,8 +322,6 @@ footer .box{
     footer ul li{
     padding: 0;
     margin-bottom: 5px;
-  }
-  footer a{
   }
  
 
