@@ -22,6 +22,7 @@
 }
 
 .container{
+    width: 100%;
     max-width: 1140px;
     margin: auto;
 }
@@ -30,7 +31,7 @@ span{
     color: var(--primary-color);
 }
 
-button{
+.btn1{
     width: 100%;
     background-color: var(--primary-color);
     padding: 20px;
@@ -79,7 +80,7 @@ nav a{
     padding: 120px 0;
 }
 .banner div{
-    max-width:570px;
+    width: 100%;
    
 }
 .banner div h1{
@@ -90,6 +91,7 @@ nav a{
 }
 .banner img{
     width: 100%;
+    height: auto;
 }
 /* plant design */
 .title .content{
@@ -113,15 +115,31 @@ nav a{
     display: flex;
     margin-top: 210px;
     justify-content: space-between;
+    align-items: center;
 }
-.flower-store img{
+.flower-store #badge{
+    width: 100%;
+    max-width: 286px;
+    position: absolute;
+    margin-top: -127px;
+    margin-left: 400px;
+    z-index: 1;
+    
+}
+.flower-store .flower-store-img{
     width:100%;
     max-width: 540px;
+    position: relative;
 }
+
 .flower-store .flower-content{
     width:100%;
+    height: auto;
     max-width:540px;
-    z-index: 0;
+    max-height: 521px;
+}
+.flower-store .flower-content ul li{
+    margin:20px 20px 20px 0px;
 }
 .deals .content {
     margin: 120px auto;
@@ -146,6 +164,12 @@ nav a{
 .border-radius p , .border-radius a{
     color:white;
 }
+.border-radius p{
+    font-size: 2rem;
+}
+.border-radius  a{
+    font-size: 1.50rem;
+}
 .col1{
     background-image: url('assets/deal-bloom.png');
    
@@ -162,6 +186,8 @@ nav a{
     text-align: center;
 }
 
+/* section form */
+
 @media screen and (max-width:576px){
     nav .content ul{
         display: none;
@@ -175,20 +201,29 @@ nav a{
     .banner div h1{
         font-size: 2rem;
     }
-    .banner{
-        margin: 28px;
-    }
     .img-card{
         grid-template-columns: repeat(2,1fr);
     }
     main .container{
         margin: 10px 0;
+    
     }
 
     .flower-store{
         flex-direction: column;
     }
-   
+    #badge{
+        display: none;
+    }
+   .off{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
+   }
+
+   .col2{
+    grid-column: auto;
+    grid-row: auto;
+   }
 
 }
