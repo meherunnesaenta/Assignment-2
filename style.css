@@ -182,12 +182,44 @@ nav a{
 .col3{
     background-image: url('assets/deal-ana.png') ;
 }
+/* section form */
 .from{
-    text-align: center;
+    background-image: url('assets/news-letter-bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.from-container{
+    margin: 150px auto;
+
+}
+.from-title h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
 }
 
-/* section form */
+.from-content {
+  display: flex;
+  border-radius: 8px;
+}
 
+.from-content input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 0 30px;
+  background-color:var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
 @media screen and (max-width:576px){
     nav .content ul{
         display: none;
